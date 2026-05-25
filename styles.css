@@ -117,11 +117,31 @@ li {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 24px var(--pad-x) 56px;
   border-top: 1px solid var(--divider);
   font-size: var(--size-footer);
+}
+
+.footer-linkedin {
+  color: var(--fg);
+  opacity: 0.55;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.footer-linkedin:hover,
+.footer-linkedin:focus-visible {
+  opacity: 1;
+}
+
+.footer-linkedin svg {
+  display: block;
 }
 
 @media (max-width: 640px) {
